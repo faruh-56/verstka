@@ -5,7 +5,6 @@
 }
 body {
     font-family: 'NT Somic', sans-serif;
-    padding: 0 calc(20px + (160 - 20) * ((100vw - 375px) / (1920 - 375)));
 }    
 
 header {
@@ -17,6 +16,8 @@ header {
 
 section {
     margin-top: 100px;
+    margin-left: calc(20px + (160 - 20) * ((100vw - 375px) / (1920 - 375)));
+    margin-right: calc(20px + (160 - 20) * ((100vw - 375px) / (1920 - 375)));
 }
 
 .header {
@@ -307,9 +308,9 @@ h2 {
     background: linear-gradient(90deg, rgba(17,174,136,1) 0%, rgba(42,132,238,1) 100%);
     display: flex;
     flex-wrap: wrap;
-    height: calc(539px + (310 - 539) * ((100vw - 375px) / (1920 - 375)));
     border: 0px;
     border-radius: 20px;
+    width: calc(320px + (1600 - 320) * ((100vw - 375px) / (1920 - 375)));
 }
 
 .timeManage {
@@ -323,13 +324,15 @@ h2 {
 }
 
 .timeManage p {
-    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+
 
 .girl img {
     width: 374px;
-    height: calc(224px + (324 - 224) * ((100vw - 375px) / (1920 - 375)));
-    height: max-content;
+    height: fit-content;
 }
 
 .reportInfo {
@@ -393,6 +396,7 @@ h2 {
 .plans {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -413,26 +417,20 @@ h2 {
 
 .price {
     font-size: 2em;
-    color: #00cc99;
+    color: #2A84EE;
     margin-bottom: 20px;
 }
 
-.select {
-    background-color: #00cc99;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
 
 .details {
     display: block;
     margin-top: 10px;
-    color: #00cc99;
+    color: #212121;
     text-decoration: none;
-    font-size: 0.9em;
+    border: 1px solid #11AE88;
+    border-radius: 20px;
+    width: auto;
+    text-align: center;
 }
 
 .discount {
@@ -453,6 +451,139 @@ h2 {
     background-color: #E8F2FC;
 }
 
+.actionPink {
+    background: rgb(255,241,215);
+    background: linear-gradient(88deg, rgba(255,241,215,1) 0%, rgba(255,181,127,1) 86%);
+    display: flex;
+    flex-wrap: wrap;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.actionPink h2 {
+    color: #212121;
+}
+
+.actionPink p {
+    color: #6C778E;
+    display: block;
+    width: calc(280px + (290 - 280) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.actionPink span {
+    color: #2A84EE;
+    font-weight: bold;
+    display: block;
+    width: calc(280px + (290 - 280) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.btnWrapper a {
+    margin-top: 10px;
+}
+
+#more {
+    display: none;
+}
+
+.swiper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.swiper-slide {
+    width: calc(320px + (782 - 320) * ((100vw - 375px) / (1920 - 375)));
+    height: 240px;
+    background-color: #EAF3FD;
+    padding: calc(15px + (40 - 15) * ((100vw - 375px) / (1920 - 375)));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.faq-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.faq-item {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.faq-question {
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.icon {
+    font-size: 24px;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .icon {
+    transform: rotate(45deg);
+}
+
+.faq-question[aria-expanded="true"] + .faq-answer {
+    display: block;
+}
+
+.logos img {
+    width: calc(60px + (80 - 60) * ((100vw - 375px) / (1920 - 375)));
+    height: calc(60px + (80 - 60) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.end {
+    margin-left: 0;
+    padding: 60px;
+    width: 100vw;
+    background-color: #E8F2FC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 1320px) {
     .emailBlock {
         flex-direction: column;
@@ -460,6 +591,10 @@ h2 {
 
     .emailInput .gradient {
         width: 100%;
+    }
+    
+    .burger-menu {
+        display: flex;
     }
 
     ul.menu {

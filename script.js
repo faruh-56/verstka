@@ -14,3 +14,13 @@ function showContent(index) {
         tab.classList.toggle('active', i === index);
     });
 }
+
+document.querySelectorAll('.faq-question').forEach((button) => {
+    button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !expanded);
+
+        const answer = button.nextElementSibling;
+        answer.style.display = !expanded ? 'block' : 'none';
+    });
+});
