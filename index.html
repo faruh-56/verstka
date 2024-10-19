@@ -1,476 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная |Кинопоиск: поиск фильмов и сериалов</title>
+    <!-- Подключение шрифта -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение стилей библиотеки Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Подключение js библиотеки Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фин Учет</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/images/logo-light.svg"
+            alt="Logo"
+            width="200"
+            class="d-inline-block align-text-top"
+          />
+        </a>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./fonts/Fonts/Webfonts">
-</head>
-
-<body>
-    <header>
-        <div class="header">
-            <img class="logo" src="./img/7.svg" alt="">
-            <div class="headerText">
-                <p>Аналитика и оцифровка продаж </p>
-                <p><span class="purple">Wildberries</span> и <span class="blue">Ozon</span></p>
-            </div>
-        </div>
-
-        <div class="burger">
-            <nav>
-                <ul class="menu" id="menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Возможности</a></li>
-                    <li><a href="#">Тарифы</a></li>
-                </ul>
-                <div class="entrance">
-                    <img src="./img/entrance.png" alt="entrance">
-                    <span>Вход</span>
-                    <button class="gradient">Зарегистрироваться</button>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <section class="finance">
-        <div class="title">
-            <h1> <span class="lightblue">Внутренняя аналитика</span> и <span class="blue">финансовый учёт</span> для бизнеса на маркетплейсах <img src="./img/marketplaces-logos-m 1.png" alt="logo"></h1>
-            <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
-            <div class="cta">
-                <span>Начните свой 3-дневный пробный период с неограниченным доступом ко всем возможностям</span>
-                <div class="emailBlock">
-                    <input type="email" placeholder="Введите ваш email" class="emailInput">
-                    <button type="submit" class="gradient">Попробовать</button>
-                </div>
-            </div>
-        </div>
-        <img class="component" src="./img/Component 1.png" alt="Com">
-
-    </section> 
-
-    <section class="income">
-        <div class="incomes">
-            <div class="routine">
-                <span>777</span>
-                <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
-            </div>
-            <div class="routine">
-                <span>5</span>
-                <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
-            </div>
-            <div class="routine">
-                <span>100 000</span>
-                <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="header">
-            <h2>Возможности сервиса</h2>
-        </div>
-    
-        <div class="tabs">
-            <div class="tab active" onclick="showContent(0)">Финансовая аналитика</div>
-            <div class="tab" onclick="showContent(1)">Товарная аналитика</div>
-            <div class="tab" onclick="showContent(2)">Аналитика внутренней рекламы</div>
-            <div class="tab" onclick="showContent(3)">Статистика</div>
-            <div class="tab" onclick="showContent(4)">Инструменты</div>
-        </div>
-    
-        <div id="content0" class="content">
-            <div class="list">
-                <h3>Инструменты для финансовой аналитики</h3>
-                <ul>
-                    <li>Отчёт о прибылях и убытках (P&L)</li>
-                    <li>Отчёт о движении денежных средств (ДДС)</li>
-                    <li>Журнал операций</li>
-                    <li>Сводка продаж</li>
-                    <li>Учёт самовыкупов</li>
-                </ul>
-            </div>
-            <button class="gradient">Попробовать бесплатно</button>
-            <div class="table">
-                <img src="./img/capabilities-1 1.png" alt="table">
-            </div>
-        </div>
-    
-        <div id="content1" class="content" style="display: none;">
-            <div class="list">
-                <h3>Инструменты для финансовой аналитики</h3>
-                <ul>
-                    <li>Отчёт о прибылях и убытках (P&L)</li>
-                    <li>Отчёт о движении денежных средств (ДДС)</li>
-                    <li>Журнал операций</li>
-                    <li>Сводка продаж</li>
-                    <li>Учёт самовыкупов</li>
-                </ul>
-            </div>
-            <button class="gradient">Попробовать бесплатно</button>
-            <div class="table">
-                <img src="./img/capabilities-1 1.png" alt="table">
-            </div>
-        </div>
-    
-        <div id="content2" class="content" style="display: none;">
-            <div class="list">
-                <h3>Инструменты для финансовой аналитики</h3>
-                <ul>
-                    <li>Отчёт о прибылях и убытках (P&L)</li>
-                    <li>Отчёт о движении денежных средств (ДДС)</li>
-                    <li>Журнал операций</li>
-                    <li>Сводка продаж</li>
-                    <li>Учёт самовыкупов</li>
-                </ul>
-            </div>
-            <button class="gradient">Попробовать бесплатно</button>
-            <div class="table">
-                <img src="./img/capabilities-1 1.png" alt="table">
-            </div>
-        </div>
-    
-        <div id="content3" class="content" style="display: none;">
-            <div class="list">
-                <h3>Инструменты для финансовой аналитики</h3>
-                <ul>
-                    <li>Отчёт о прибылях и убытках (P&L)</li>
-                    <li>Отчёт о движении денежных средств (ДДС)</li>
-                    <li>Журнал операций</li>
-                    <li>Сводка продаж</li>
-                    <li>Учёт самовыкупов</li>
-                </ul>
-            </div>
-            <button class="gradient">Попробовать бесплатно</button>
-            <div class="table">
-                <img src="./img/capabilities-1 1.png" alt="table">
-            </div>
-        </div>
-    
-        <div id="content4" class="content" style="display: none;">
-            <div class="list">
-                <h3>Инструменты для финансовой аналитики</h3>
-                <ul>
-                    <li>Отчёт о прибылях и убытках (P&L)</li>
-                    <li>Отчёт о движении денежных средств (ДДС)</li>
-                    <li>Журнал операций</li>
-                    <li>Сводка продаж</li>
-                    <li>Учёт самовыкупов</li>
-                </ul>
-            </div>
-            <button class="gradient">Попробовать бесплатно</button>
-            <div class="table">
-                <img src="./img/capabilities-1 1.png" alt="table">
-            </div>
-        </div>
-    </section>
-
-    <section class="action">
-        <div class="timeManage">
-            <h2>Начните экономить своё время</h2>
-            <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
-            <div class="emailBlock">
-                <div class="inputWrapper">
-                    <input type="email" placeholder="Введите ваш email" class="emailInput">
-                </div>
-                <div class="btnWrapper">
-                    <button type="submit" class="gradient">Попробовать</button>
-                </div>
-            </div>
-        </div>
-        <div class="girl">
-            <img src="./img/[removal 1.png" alt="girl">
+        <a
+          href="/pages/favs.html"
+          type="button"
+          class="btn btn-outline-secondary"
+        >
+          Избранные
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="d-flex align-items-center gap-2 mt-4">
+          <input
+            class="form-control form-control"
+            type="text"
+            id="movie-search-input"
+            placeholder="Введите название фильма или сериала"
+          />
+          <button type="button" class="btn btn-outline-primary" id="movie-search-button">Найти</button>
         </div>
 
-    </section>
-    
-    <section class="reports">
-        <h2>Собираем единые отчёты по всем вашим магазинам</h2>
-        <div class="reportInfo">
-            <div class="report">
-                <p>C Mpassistant вы сможете:</p>
-                <div class="reportText">
-                    <img src="./img/Vector (1).png" alt="vector">
-                    <span>Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте</span>
-                </div>
-                <div class="reportText">
-                    <img src="./img/Vector (1).png" alt="vector">
-                    <span>Не потратите время на сбор данных из нескольких кабинетов или маркетплейсов</span>
-                </div>
-                <div class="reportText">
-                    <img src="./img/Vector (1).png" alt="vector">
-                    <span>Добавите любое количество магазинов</span>
-                </div>
-            </div>
-            <div class="reportImg">
-                <img id="frame32" src="./img/Frame 32.png" alt="report">
-                <img id="frame63" src="./img/Frame 63.png" alt="report">
-            </div>
-        </div>
-    </section>
+        <section>
+          <h2 class="my-3">Результаты поиска</h2>
+          <div class="search-results d-flex justify-content-between flex-wrap">
+         <!-- сюда рендерится карточка фильма -->
+          </div>
+        </section>
 
-    <section class="reason">
-        <h2>Почему выбирают Mpassistant</h2>
-        <div class="reasons">
-            <div class="facts">
-                <img src="./img/Frame 69.svg" alt="">
-                <span>Точность данных</span>
-                <p>Данные в отчётах сервиса полностью совпадает с данными ваших магазинов на маркетплейсах.</p>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
             </div>
-            <div class="facts">
-                <img src="./img/analytics.svg" alt="">
-                <span>Большой функционал</span>
-                <p>Полный набор инструментов для внутренней аналитики для Wildberries и Ozon. Более 10 полезных отчётов с удобными настраиваемыми фильтрами и параметрами.</p>
-            </div>
-            <div class="facts">
-                <img src="./img/manual.svg" alt="">
-                <span>Лёгкость освоения</span>
-                <p>Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции и видео, помогающие легко читать их и использовать.</p>
-            </div>
-            <div class="facts">
-                <img src="./img/experience.svg" alt="">
-                <span>Подходит всем</span>
-                <p>Mpassistant создан селлерами для селлеров. Наш опыт в товарном бизнесе и разработке IT систем позволил создать полезный и удобный продукт, поэтому он подойдёт как для новичков, так и для опытных селлеров.</p>
-            </div>
-            <div class="facts">
-                <img src="./img/confidential-document.svg" alt="">
-                <span>Конфиденциальность</span>
-                <p>Ваша конфиденциальность для нас самый главный приоритет. Все ваши данные надёжно сохранены, а информация об этом записана в договоре-оферте. По желанию можем заключить дополнительное соглашение (NDA).</p>
-            </div>
-            <div class="facts">
-                <img src="./img/customer-service.svg" alt="">
-                <span>Служба заботы</span>
-                <p>Наша служба заботы готова решить практически любые вопросы и в режиме 24/7.</p>
-            </div>
+          </div>
         </div>
-    </section>
-
-
-    <section class="action">
-        <div class="timeManage">
-            <h2>Начните экономить своё время</h2>
-            <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
-            <div class="emailBlock">
-                <div class="inputWrapper">
-                    <input type="email" placeholder="Введите ваш email" class="emailInput">
-                </div>
-                <div class="btnWrapper">
-                    <button type="submit" class="gradient">Попробовать</button>
-                </div>
-            </div>
-        </div>
-        <div class="girl">
-            <img src="./img/[removal 3.png" alt="girl">
-        </div>
-    </section>
-
-    <section class="pricing">
-        <h2>Выберите тариф</h2>
-        <div class="tabs">
-            <button class="tab active">1 месяц</button>
-            <button class="tab">3 месяца</button>
-            <button class="tab">6 месяцев</button>
-            <button class="tab">12 месяцев</button>
-        </div>
-        <div class="plans">
-            <div class="plan">
-                <h3>Стартовый</h3>
-                <p class="price">4 990 ₽</p>
-                <button type="submit" class="gradient">Попробовать</button>
-                <a href="#" class="details">Подробнее</a>
-            </div>
-            <div class="plan discount-10">
-                <h3>Стартовый +</h3>
-                <p class="price">13 473 ₽</p>
-                <div class="discount">-10%</div>
-                <button type="submit" class="gradient">Попробовать</button>
-                <a href="#" class="details">Подробнее</a>
-            </div>
-            <div class="plan discount-15">
-                <h3>Профи</h3>
-                <p class="price">25 446 ₽</p>
-                <div class="discount">-15%</div>
-                <button type="submit" class="gradient">Попробовать</button>
-                <a href="#" class="details">Подробнее</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="actionPink">
-        <div class="timeManage">
-            <h2>Начинающим селлерам с выручкой</h2>
-            <p>до 200 000 ₽/мес</p>
-            <span>Бесплатно</span>
-            <div class="btnWrapper">
-                <button type="submit" class="gradient">Попробовать</button>
-                <a href="#" class="details">Подробнее</a>
-            </div>
-        </div>
-        <div class="girl">
-            <img src="./img/Remove-bg_ai_1691479932588-transformed 1.png" alt="girl">
-        </div>
-    </section>
-    
-    <section class="reviews">
-        <h2>Отзывы</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <p>Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара. Калькулятор полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня бесплатно, так как проходил по условиям бесплатного доступа: оборот до 200т.р в месяц. Этого не встретить на других сайтах, это возможность развиваться на ранних этапах, без вложения огромных сумм для доступа к подобным сайтам. </p>
-                    <span>— Алексей</span>
-                </div>
-                <div class="swiper-slide">
-                    <p>Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
-                    <span>— Владислав</span>
-                </div>
-                <div class="swiper-slide">
-                    <p>Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
-                    <span>— Владислав</span>
-                </div>
-                <div class="swiper-slide">
-                    <p>Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
-                    <span>— Владислав</span>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section class="faq-section">
-        <h2>Часто задаваемые вопросы</h2>
-        <p>Собрали ответы на часто задаваемые вопросы от вас</p>
-        <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                Чем вы отличаетесь от Mpstats и других систем аналитики?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Мы специализируемся на внутренней финансовой аналитике, поэтому данные у нас более точные и полные...
-                </p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                Сколько я могу пользоваться своими данными?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Мы специализируемся на внутренней финансовой аналитике, поэтому данные у нас более точные и полезные. Другие сервисы аналитики обычно специализируются на внешнем анализе продаж всех поставщиков и берут данные из открытых источников. Мы же собираем данные только по вашим кабинетам, по тем доступам, которые вы нам предоставили.
-                </p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                Сколько времени занимает создание отчетов?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Мы специализируемся на внутренней финансовой аналитике, поэтому данные у нас более точные и полезные. Другие сервисы аналитики обычно специализируются на внешнем анализе продаж всех поставщиков и берут данные из открытых источников. Мы же собираем данные только по вашим кабинетам, по тем доступам, которые вы нам предоставили.
-                </p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                В чем удобство вашей аналитики?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Мы специализируемся на внутренней финансовой аналитике, поэтому данные у нас более точные и полезные. Другие сервисы аналитики обычно специализируются на внешнем анализе продаж всех поставщиков и берут данные из открытых источников. Мы же собираем данные только по вашим кабинетам, по тем доступам, которые вы нам предоставили.
-                </p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                Насколько точные данные получаются по API?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Мы специализируемся на внутренней финансовой аналитике, поэтому данные у нас более точные и полезные. Другие сервисы аналитики обычно специализируются на внешнем анализе продаж всех поставщиков и берут данные из открытых источников. Мы же собираем данные только по вашим кабинетам, по тем доступам, которые вы нам предоставили.
-                </p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                Что делать если маркетплейс изменит API?
-                <span class="icon" onclick="">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Мы специализируемся на внутренней финансовой аналитике, поэтому данные у нас более точные и полезные. Другие сервисы аналитики обычно специализируются на внешнем анализе продаж всех поставщиков и берут данные из открытых источников. Мы же собираем данные только по вашим кабинетам, по тем доступам, которые вы нам предоставили.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="end">
-        <div class="endLogo">
-            <img src="./img/7.svg" alt="logo">
-            <p><span class="purple">Wildberries</span> и <span class="blue">Ozon</span></p>
-            <div class="logos">
-                <img src="./img/Group 25.png" alt="vk">
-                <img src="./img/Group.png" alt="Telegram">
-                <img src="./img/Group (1).png" alt="Youtube">
-            </div>
-        </div>
-        <div class="service">
-            <h3>Сервис</h3>
-            <span>Для кого</span>
-            <span>Возможности</span>
-            <span>Тарифы</span>
-        </div>
-        <div class="service">
-            <h3>Клиентам</h3>
-            <span>Вход</span>
-            <span>Регистрация</span>
-            <span>Восстановления пароля</span>
-        </div>
-        <div class="service">
-            <h3>Документы</h3>
-            <span>Пользовательское соглашение</span>
-            <span>Политика конфиденциальности</span>
-            <span>Публичная оферта</span>
-            <span>Использование cookie</span>
-            <span>Техническая поддержка</span>
-        </div>
-    </section>
-
-
-    <script src="./script.js"></script>
-    <script src="./swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-            // Responsive breakpoints
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                slidesPerView: 1,
-                spaceBetween: 10
-                },
-                // when window width is >= 640px
-                850: {
-                slidesPerView: 3,
-                spaceBetween: 25
-                }
-            },
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            });
-    </script>
-</body>
-
+      </div>
+    </main>
+    <script src="/index.js" type="module"></script>
+  </body>
 </html>
